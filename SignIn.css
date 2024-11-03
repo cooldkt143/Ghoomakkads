@@ -1,83 +1,149 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('loginbg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0px 5px 5px 2px rgb(83, 82, 82);
-    border-radius: 8px;
-    border: 2px solid rgb(69, 68, 68);
-  }
-  
-  .sign-in-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .input-group label {
-    display: block;
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 5px;
-  }
-  
-  .input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 12px;
-    background: #007bff;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background: #0056b3;
-  }
-  
-  .sign-up {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
-  }
-  
-  .sign-up a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .sign-up a:hover {
-    text-decoration: underline;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+  background-image: url(loginbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.container {
+  display: flex;
+  width: 500px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-section, .info-section {
+  padding: 40px;
+}
+
+.login-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #3A57E8;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.forgot-password {
+  text-align: right;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3A57E8;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.divider {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin: 20px 0;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #333;
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.signup-text {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+.signup-text a {
+  color: #3A57E8;
+  text-decoration: none;
+}
+
+.google-btn:hover {
+  background-color: #f1f1f1;
+}
