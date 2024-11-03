@@ -121,3 +121,9 @@ button:hover{
     color: white;
     /* font-weight: bold; */
 }
+
+.info-btn:hover{
+    background-color: white;
+    color: hsl(180, 98%, 31%);
+    border: 2px solid hsl(180, 98%, 31%);
+}
