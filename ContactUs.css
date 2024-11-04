@@ -6,7 +6,7 @@
 }
 
 header{
-    background-color: #fdf3f3;
+    background-color: #c96868;
 }
 
 body {
@@ -28,6 +28,7 @@ body {
 
 .line{
     padding-top: 10px;
+    color: white;
 }
 
 .logo {
@@ -48,7 +49,7 @@ body {
 
 .navbar nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: 500;
 }
 
@@ -58,16 +59,16 @@ body {
 
 .button {
     padding: 8px 15px;
-    background-color: hsl(180, 98%, 31%);
-    color: #fdf3f3;
+    background-color: white;
+    color: #c96868;
     border-radius: 4px;
     text-decoration: none;
 }
 
 .button:hover{
-    background-color: #fdf3f3;
-    color: hsl(180, 98%, 31%);
-    border: 2px solid hsl(180, 98%, 31%);
+    background-color: #c96868;
+    color: white;
+    border: 2px solid white;
 }
 
 .contact-section {
