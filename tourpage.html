@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Options</title>
+    <link rel="stylesheet" href="tourpage.css">
+</head>
+<body>
+
+    <header>
+        <h1>Discover Your Next Adventure</h1>
+        <p>Choose your perfect travel experience.</p>
+    </header>
+
+    <section class="travel-options">
+        <div class="option">
+            <div class="icon solo"></div>
+            <h2>Solo Travel</h2>
+            <p>Embark on a personal journey and explore the world independently.</p>
+        </div>
+        <div class="option">
+            <div class="icon group"></div>
+            <h2>Strangers Group Travel</h2>
+            <p>Join a group of fellow travelers and make new friends on the go.</p>
+            <a href="#chat" class="chat-link">Join Chat</a>
+        </div>
+        <div class="option">
+            <div class="icon surprise"></div>
+            <h2>Surprise Travel</h2>
+            <p>Let us plan a surprise trip for you and reveal the destination last minute.</p>
+        </div>
+    </section>
+
+    <section class="chat-section" id="chat">
+        <h2>Group Travel Chat</h2>
+        <div class="chat-box">
+            <div class="messages" id="messages">
+                <p><strong>User1:</strong> Hello! Excited to travel with everyone!</p>
+                <p><strong>User2:</strong> Same here! Can't wait to see where we go.</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

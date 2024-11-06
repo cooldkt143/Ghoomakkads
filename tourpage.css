@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    color: #333;
+    background-image: url(tourpagebg.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #004d99;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.travel-options {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.option {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 2rem;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+    background-size: cover;
+}
+
+.icon.solo {
+    background-image: url('https://img.icons8.com/ios-filled/100/sunset.png'); /* Solo travel vector */
+}
+
+.icon.group {
+    background-image: url('https://img.icons8.com/ios-filled/100/people.png'); /* Group travel vector */
+}
+
+.icon.surprise {
+    background-image: url('https://img.icons8.com/ios-filled/100/treasure-map.png'); /* Surprise travel vector */
+}
+
+h2 {
+    color: #004d99;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.chat-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #004d99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chat-section {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-section h2 {
+    font-size: 1.8rem;
+    color: #004d99;
+    text-align: center;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chat-input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    padding: 0.5rem 1rem;
+    background-color: #004d99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #003366;
+}
