@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="AbouUs.css">
 </head>
 <body>
-
+    <script src="AboutUs.js"></script>
     <header>
         <nav class="nav-bar">
             <div class="logo">
                 <img src="logo-ghoomakkads (2).png" width="70" height="70">
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="text">Home</a></li>
-                <li><a href="AboutUs.html" class="text">About Us</a></li>
-                <li><a href="ContactUs.html" class="text">Contact Us</a></li>
+                <li><a onclick="openHome()" class="text">Home</a></li>
+                <li><a onclick="openAbout()" class="text">About Us</a></li>
+                <li><a onclick="openContact()" class="text">Contact Us</a></li>
                 <!-- <li><a href="#" class="text">Help</a></li> -->
-                <li><a href="SignIn.html" class="sign-in-btn" id = "sign-in-button">Sign In</a></li>
+                <li><a onclick="openLogIn()" class="sign-in-btn" id = "sign-in-button">Sign In</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +37,7 @@
                 "Embark on Exciting Adventures with New Friends!"
                 Experience spontaneity with our surprise trip feature! Our app creates a unique adventure, connecting you with fellow travelers and a dedicated host. Discover hidden gems and enjoy a hassle-free journey. Just pack your bags for an unforgettable experience!
             </p>
-            <a href="ContactUs.html" class="info-btn">Contact Us</a>
+            <a onclick="openContact()" class="info-btn">Contact Us</a>
             <!-- <button class="info-btn">Contact Us</button> -->
         </div>
         <div class="image-content">
