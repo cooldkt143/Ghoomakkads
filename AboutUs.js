@@ -15,5 +15,5 @@ function openContact(){
 
 //linking log in page 
 function openLogIn(){
-    window.location.href="signIn.html";
+    window.location.href="SignIn.html";
 }
