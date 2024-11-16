@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign In</title>
   <link rel="stylesheet" href="SignIn.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script>
+    const CLIENT_ID = 'YOUR_CLIENT_ID.apps.googleusercontent.com'; // Replace with your actual client ID
+  </script>
 </head>
 <body>
-  <script src = "SignIn.js"></script>
   <div class="container">
     <div class="login-section">
         <div class="logo">
-          <h1 class="logo-ghoomakkads"></h2><img src="logo-ghoomakkads sign in.png" width="50" height="65">
+          <h1 class="logo-ghoomakkads">
+            <img src="logo-ghoomakkads sign in.png" width="50" height="65">
+          </h1>
         </div>
         <h2>Welcome Back!</h2>
         <p>Please enter login details below</p>
@@ -30,11 +35,13 @@
             
             <div class="divider">Or continue</div>
             
-            <button type="button" class="google-btn">
+            <div class="google-btn" id="google-signin-button">
                 <img src="GoogleLogo.webp" alt="Google logo"> Log in with Google
-            </button>
+            </div>
         </form>
-        <p class="signup-text">Don't have an account? <a onclick="openPage()">Sign Up</a></p>
+        <p class="signup-text">Don't have an account? <a onclick="openSignUp()">Sign Up</a></p>
     </div>
+  </div>
+  <script src="SignIn.js"></script>
 </body>
 </html>
