@@ -64,3 +64,21 @@ function openDestination(){
 function openRegister(){
   window.location.href="Register.html";
 }
+
+//linking profile page 
+function openProfile(){
+  window.location.href="Profile.html";
+}
+
+//set signup and sign in button
+let profile = document.querySelector(".profile_logo");
+
+profile.classList.remove("hide")
+
+let login = document.querySelector(".btn");
+
+login.classList.add("hide");
+
+let signup = document.querySelector(".btn1");
+
+signup.classList.add("hide");

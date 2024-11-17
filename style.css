@@ -189,6 +189,42 @@
     --border-color: var(--viridian-green);
   }
   
+  .btn1 {
+    background: var(--background, var(--white-1));
+    color: var(--color, var(--viridian-green));
+    font-weight: var(--fw-700);
+    width: max-content;
+    padding: 10px 25px;
+    border: 2px solid var(--border-color, var(--white-1));
+    border-radius: var(--radius-6);
+  }
+  
+  .btn1-secondary:is(:hover, :focus) {
+    --background: transparent;
+    --color: var(--white-1);
+  }
+  
+  .btn1-primary {
+    --background: var(--viridian-green);
+    --color: var(--white-1);
+    --border-color: var(--viridian-green);
+  }
+  
+  .btn1-primary:is(:hover, :focus) {
+    --background: transparent;
+    --color: var(--viridian-green);
+  }
+  
+  .btn1-outline {
+    --color: var(--oxford-blue);
+    --border-color: var(--silver-chalice);
+  }
+  
+  .btn1-outline:is(:hover, :focus) {
+    --color: var(--viridian-green);
+    --border-color: var(--viridian-green);
+  }
+  
   .section { padding-block: var(--section-padding); }
   
   .section-subtitle {
@@ -341,7 +377,7 @@
     visibility: visible;
   }
   
-  .navbar-list { margin-bottom: 15px; }
+  .navbar-list { margin-bottom: 20px; }
   
   .navbar-link {
     color: var(--white-1);
@@ -355,8 +391,17 @@
   .navbar-link:is(:hover, :focus) { border-color: var(--white-1); }
   
   
+  .hide{
+    display: none;
+  }
+
+  .hide{
+    display: none;
+  }
   
-  
+  .profile_logo{
+    background: transparent;
+  }
   
   /*-----------------------------------*\
     #HERO
