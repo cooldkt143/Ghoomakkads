@@ -1,6 +1,6 @@
 // linking home page 
 function openHome(){
-    window.location.href="index.html";
+    window.location.href="Home.html";
 }
 
 // linking about us page 
