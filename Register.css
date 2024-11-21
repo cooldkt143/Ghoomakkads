@@ -89,7 +89,7 @@ input[type="checkbox"] {
     accent-color: #4b5c9d;
 }
 
-button[type="submit"] {
+.btn[type="submit"] {
     background-color: #6b4011;
     color: #fff;
     padding: 12px 25px;
@@ -101,7 +101,7 @@ button[type="submit"] {
     margin-top: 20px;
 }
 
-button[type="submit"]:hover {
+.btn[type="submit"]:hover {
     background-color: #a2413e;
     transform: scale(1.05);
 }
