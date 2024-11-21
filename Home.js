@@ -76,6 +76,11 @@ function openChatwithAI(){
   window.location.href="chatAi.html";
 }
 
+//linking Adventure Hub page 
+function openAdventure(){
+  window.location.href="adventurehub.html";
+}
+
 //set signup and sign in button
 let profile = document.querySelector(".profile_logo");
 
