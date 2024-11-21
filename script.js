@@ -70,6 +70,12 @@ function openProfile(){
   window.location.href="Profile.html";
 }
 
+
+//linking Chat with Ai page 
+function openChatwithAI(){
+  window.location.href="chatAi.html";
+}
+
 //set signup and sign in button
 let profile = document.querySelector(".profile_logo");
 
