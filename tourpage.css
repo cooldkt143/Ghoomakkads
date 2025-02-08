@@ -63,7 +63,9 @@ header p {
 }
 
 .icon.group {
-    background-image: url('https://img.icons8.com/ios-filled/100/people.png'); /* Group travel vector */
+    background-image: url('strangertourpage.jpg');
+    width: 200px; /* Group travel vector */
+    height: 100px;
 }
 
 .icon.surprise {
