@@ -17,3 +17,8 @@ function openContact(){
 function openLogIn(){
     window.location.href="SignIn.html";
 }
+
+//linking profile page
+function openProfile(){
+    window.location.href="Profile.html";
+  }

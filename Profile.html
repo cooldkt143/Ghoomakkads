@@ -4,50 +4,95 @@
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="shortlogo.jpg" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Profile Page</title>
+  <title>Ghum Profile</title>
   <link rel="stylesheet" href="Profile.css">
 </head>
 <body>
-  <div class="profile-page">
-    <div class="profile-header">
-      <div class="profile-pic">
-        <img src="host1.jpg" alt="Profile Picture">
+
+  <div class="profile-container">
+    <header class="profile-header">
+      <div class="profile-image">
+        <img src="prof2.jpg" alt="Profile Image">
       </div>
+
+      <!-- Toggle Button for Light/Dark Mode -->
+      <div class="theme-toggle">
+        <button onclick="toggleTheme()">🌙 / 🌞</button>
+      </div>
+
       <div class="profile-info">
-        <h1>Aisha Khan</h1>
-        <p>Dreamer & Traveler</p>
-        <p>Joined: October 22, 2024</p>
+        <h1>Vanella Markus</h1>
+        <p>@vanel</p>
+        <div class="stats">
+          <span><strong>200</strong> posts</span>
+          <span><strong>1.5M</strong> followers</span>
+          <span><strong>180</strong> following</span>
+        </div>
+        <button class="edit-profile-btn">Edit Profile</button>
       </div>
-    </div>
+    </header>
 
-    <div class="profile-sections">
-      <section class="section saved-trips">
-        <h2>Saved Trips</h2>
-        <div class="trip-gallery">
-          <img src="pic1 (1).jpg" alt="Trip 1">
-          <img src="pic1 (2).jpg" alt="Trip 2">
-          <img src="pic1 (3).jpg" alt="Trip 3">
-        </div>
-      </section>
+    <!-- Profile Tabs -->
+    <nav class="profile-tabs">
+      <ul>
+        <li class="active" onclick="changeTab('posts')">Posts</li>
+        <li onclick="changeTab('reels')">Reels</li>
+        <li onclick="changeTab('saved')">Saved</li>
+      </ul>
+    </nav>
 
-      <section class="section past-trips">
-        <h2>Past Trips</h2>
-        <div class="trip-gallery">
-          <img src="pic1 (4).jpg" alt="Trip 4">
-          <img src="pic1 (5).jpg" alt="Trip 5">
-          <img src="pic1 (6).jpg" alt="Trip 6">
+    <!-- Content Sections (Posts, Reels, Saved) -->
+    <div class="tabs-content">
+      <!-- Posts Section -->
+      <div id="posts" class="tab-content active">
+        <div class="gallery">
+          <div class="post" onclick="openModal('post2.jpg')">
+            <img src="post2.jpg" alt="Post 2">
+          </div>
+          <div class="post" onclick="openModal('post3.jpg')">
+            <img src="post3.jpg" alt="Post 3">
+          </div>
+          <div class="post" onclick="openModal('post4.jpg')">
+            <img src="post4.jpg" alt="Post 4">
+          </div>
         </div>
-      </section>
+      </div>
 
-      <section class="section wish-trips">
-        <h2>Wish Trips</h2>
-        <div class="trip-gallery">
-          <img src="pic(7).jpg" alt="Trip 7">
-          <img src="pic(8).jpg" alt="Trip 8">
-          <img src="pic(9).jpg" alt="Trip 9">
+      <!-- Reels Section -->
+      <div id="reels" class="tab-content">
+        <div class="gallery">
+          <div class="post" onclick="openModal('reels1.jpg')">
+            <img src="reels1.jpg" alt="Reel 1">
+          </div>
+          <div class="post" onclick="openModal('reels2.gif')">
+            <img src="reels2.gif" alt="Reel 1">
+          </div>
+          <div class="post" onclick="openModal('reels3.jpg')">
+            <img src="reels3.jpg" alt="Reel 2">
+          </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Saved Section -->
+      <div id="saved" class="tab-content">
+        <div class="gallery">
+          <div class="post" onclick="openModal('saved1.jpeg')">
+            <img src="tagged1.jpg" alt="Saved 1">
+          </div>
+          <div class="post" onclick="openModal('saved2.jpeg')">
+            <img src="tagged2.jpg" alt="Saved 2">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Modal (Popup) -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage" src="">
+  </div>
+
+  <script src="Profile.js"></script>
 </body>
 </html>

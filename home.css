@@ -1092,3 +1092,22 @@
     image-resolution: 250px 250px;
   }
  
+  #bp-web-widget {
+    width: 60px !important; /* Adjust size */
+    height: 60px !important;
+    bottom: 20px !important; /* Adjust position */
+    right: 20px !important;
+    border-radius: 50% !important; /* Ensure it's circular */
+    background-color: white !important; /* Ensure background is correct */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important; /* Add shadow */
+  }
+
+  #bp-web-widget img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+  }
+  
